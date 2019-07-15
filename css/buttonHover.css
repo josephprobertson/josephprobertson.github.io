@@ -12,16 +12,11 @@
 .mainButton {
     display: inline-block;
     position: relative;
-    margin: 1em;
-    padding: 0.67em;
-    border: 2px solid #FFF;
     overflow: hidden;
     text-decoration: none;
     font-size: 2em;
     outline: none;
     color: #FFF;
-    background: transparent;
-    font-family: 'raleway', sans-serif;
 }
 
 .mainButton span {
@@ -39,7 +34,6 @@
 .mainButton:after {
     content: '';
     position: absolute;
-    top: 0.67em;
     left: 0;
     width: 100%;
     text-align: center;

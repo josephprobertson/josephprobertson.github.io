@@ -36,10 +36,14 @@ h2 {
 }
 
 .subTitle {
-	opacity: 0;
 	text-align:center;
 	margin-bottom:3rem;
 	margin-top:1.5rem;
+}
+
+@media only screen and (min-width: 768px) {	
+.subTitle {
+	opacity: 0;
 	-moz-animation: subtitleAnimation 1s ease-in 11s forwards;
     /* Firefox */
     -webkit-animation: subtitleAnimation 1s ease-in 11s forwards;
@@ -61,6 +65,7 @@ h2 {
         opacity:1;
     }
 }
+}
 
 .mainButton {
 	padding: 1rem;
@@ -69,7 +74,6 @@ h2 {
 	text-transform:uppercase;
 	background-color: #00cc00;
 	border-color: #11cc11;
-	opacity:0;
 }
 
 .mainButton:hover {
@@ -89,6 +93,11 @@ h2 {
 }
 
 /*  Button appears after animations */
+@media only screen and (min-width: 768px) {	
+.mainButton {
+	opacity: 0;
+}
+
 #mainButton {
     -moz-animation: cssAnimation 1s ease-in 13s forwards;
     /* Firefox */
@@ -112,6 +121,7 @@ h2 {
     }
 }
 /* End Button Appearance Animation */
+}
 
 @media only screen and (max-width: 768px) {	
 
@@ -146,7 +156,8 @@ h2 {
 </div>
 
 
-  <a name="myWork"><h2>Check out some of my work</h2></a>
+  <a name="myWork">&nbsp;</a>
+<h2>Check out some of my work</h2>
 
   <hr class="mt-2 mb-5">
 

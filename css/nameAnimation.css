@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-
+@media only screen and (min-width: 768px) {	
 /* Name Animation CSS */
 svg {
 	overflow:visible;
@@ -116,4 +116,5 @@ to {stroke-dashoffset: 0px;}
 
 }
 /* End Name Animation CSS */
+}
 

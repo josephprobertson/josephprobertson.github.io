@@ -140,6 +140,30 @@ h2 {
 		font-size: 20px;
 	}
 }
+
+/* div fadeout effect */
+.hidden {
+  overflow: hidden;
+  /* This container should not have padding, borders, etc. */
+}
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s 1s linear;
+}
+.hidden {
+  opacity: 0;
+  height: 0 !important;
+  transition: opacity 1s linear, height 0s 1s linear;
+}
+.visible &gt; div,
+.hidden &gt; div {
+  /* Put any padding, border, min-height, etc. here. */
+}
+.hidden &gt; div {
+  margin-top: -10000px;
+  transition: margin-top 0s 2s;
+}
 </style>
 
 </head>
@@ -153,13 +177,13 @@ h2 {
 <h2 class="subTitle">Web Developer Extraordinaire</h2>
 <div class="row justify-content-center">
 <div class="col-md-4 col-sm-10">
-<a id="mainButton" class="btn btn-primary btn-block mainButton" href="#myWork" data-hover="CLICK ME"><span>ENTER</span></a>
+<a id="mainButton" class="btn btn-primary btn-block mainButton" data-hover="CLICK ME"><span>ENTER</span></a>
 </div>
 </div>
 
 </div>
 
-
+<div class="imgGallery hidden">
   <a name="myWork">&nbsp;</a>
 <h2>Check out some of my work</h2>
 
@@ -234,9 +258,25 @@ h2 {
           </a>
     </div>
   </div>
+</div>  
 
 </div>
 </body>
+
+<!-- Show/Hide Content Button JS -->
+<script>
+var hideBtn = document.querySelector("#mainButton"),
+    content = document.querySelector(".landingPageContainer");
+	gallery = document.querySelector(".imgGallery");
+
+// Toggle show/hide classes on test content
+hideBtn.addEventListener("click", function(){
+  content.className = "hidden";
+}, false);
+hideBtn.addEventListener("click", function(){
+  gallery.className = "visible";
+}, false);
+</script>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

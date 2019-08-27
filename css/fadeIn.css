@@ -63,3 +63,68 @@
 }
 
   }
+  
+  
+  
+  
+@media all and (min--moz-device-pixel-ratio:0) and (min-resolution: 3e1dpcm) {
+	  
+/* Hero Subtitle fades in after animations */	  
+@media only screen and (min-width: 768px) {	
+.subTitle {
+	opacity: 0;
+	-moz-animation: subtitleAnimation 1s ease-in 10s forwards;
+    /* Firefox */
+    -webkit-animation: subtitleAnimation 1s ease-in 10s forwards;
+    /* Safari and Chrome */
+    -o-animation: subtitleAnimation 1s ease-in 10s forwards;
+    /* Opera */
+    animation: subtitleAnimation 1s ease-in 10s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes subtitleAnimation {
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes subtitleAnimation {
+    to {
+        opacity:1;
+    }
+}
+}	
+  
+/*  Button appears after animations */
+@media only screen and (min-width: 768px) {	
+.mainButton {
+	opacity: 0;
+}
+
+#mainButton {
+    -moz-animation: cssAnimation 1s ease-in 12s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 1s ease-in 12s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 1s ease-in 12s forwards;
+    /* Opera */
+    animation: cssAnimation 1s ease-in 12s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes cssAnimation {
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        opacity:1;
+    }
+}
+/* End Button Appearance Animation */
+}
+
+  }

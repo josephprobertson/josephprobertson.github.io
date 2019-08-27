@@ -30,8 +30,8 @@ from {stroke-dashoffset: -1210px}
 to {stroke-dashoffset: 0px;}
 
 }
-#A1 { stroke-dasharray: 832px; stroke-dashoffset: -832px; Animation: O1-anim .75s linear 0.8s forwards;}
-@keyframes O1-anim {
+#A1 { stroke-dasharray: 832px; stroke-dashoffset: -832px; Animation: A1-anim .75s linear 0.8s forwards;}
+@keyframes A1-anim {
 
 from {stroke-dashoffset: -832px}
 
@@ -54,8 +54,8 @@ from {stroke-dashoffset: -2250px}
 to {stroke-dashoffset: 0px;}
 
 }
-#A2 { stroke-dasharray: 832px; stroke-dashoffset: -832px; Animation: O2-anim .75s linear 3.2s forwards;}
-@keyframes O2-anim {
+#A2 { stroke-dasharray: 832px; stroke-dashoffset: -832px; Animation: A2-anim .75s linear 3.2s forwards;}
+@keyframes A2-anim {
 
 from {stroke-dashoffset: -832px}
 
@@ -102,8 +102,8 @@ from {stroke-dashoffset: -1215px}
 to {stroke-dashoffset: 0px;}
 
 }
-#A3 { stroke-dasharray: 832px; stroke-dashoffset: -832px; Animation: O3-anim .75s linear 8.0s forwards;}
-@keyframes O3-anim {
+#A3 { stroke-dasharray: 832px; stroke-dashoffset: -832px; Animation: A3-anim .75s linear 8.0s forwards;}
+@keyframes A3-anim {
 
 from {stroke-dashoffset: -832px}
 

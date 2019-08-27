@@ -68,11 +68,12 @@
   letter-spacing: 0.15em;
   margin-bottom: 0.5em;
   text-transform: uppercase;
+  font-size: 1.75em;
 }
 
 .content-details p{
   color: #fff;
-  font-size: 0.8em;
+  font-size: 1.33em;
 }
 
 .fadeIn-bottom{
@@ -91,7 +92,7 @@
   left: 80%;
 }
 
-@media only screen and (max-width: 768px) {	
+@media only screen and (max-width: 992px) {	
 
 .content-details h3 {
 	font-size: 24px;

@@ -144,7 +144,6 @@ h2 {
 /* div fadeout effect */
 .hidden {
   overflow: hidden;
-  /* This container should not have padding, borders, etc. */
 }
 .visible {
   visibility: visible;
@@ -156,14 +155,13 @@ h2 {
   height: 0 !important;
   transition: opacity 1s linear, height 0s 1s linear;
 }
-.visible &gt; div,
-.hidden &gt; div {
-  /* Put any padding, border, min-height, etc. here. */
-}
 .hidden &gt; div {
   margin-top: -10000px;
   transition: margin-top 0s 2s;
 }
+
+/* end div fadeout effect */
+
 </style>
 
 </head>

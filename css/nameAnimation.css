@@ -250,7 +250,7 @@ to {stroke-dashoffset: 0px;}
   }
   
   
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+@media \\0 screen {
 
 @media only screen and (min-width: 768px) {	
 /* Name Animation CSS */

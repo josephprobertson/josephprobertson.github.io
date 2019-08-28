@@ -95,9 +95,9 @@ p {
 }
 
 /* div fadeout effect */
-.hidden {
+/*.hidden {
   overflow: hidden;
-}
+}*/
 .visible {
   visibility: visible;
   opacity: 1;
@@ -106,7 +106,8 @@ p {
 .hidden {
   opacity: 0;
   height: 0 !important;
-  transition: opacity 1s linear, height 0s 1s linear;
+  visibility: hidden;
+  transition: opacity 1s linear, height 0s 1s linear, visibility 0s 1s linear;
 }
 .hidden &gt; div {
   margin-top: -10000px;

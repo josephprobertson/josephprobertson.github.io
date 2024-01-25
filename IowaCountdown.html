@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="width=device-width, initial-scale=1" name="viewport" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
 <style>
   * {
@@ -37,7 +37,7 @@
   }
 
   .centerTimerHolder {
-    width:40%;
+    width: 40%;
     height: 20%;
     padding: 2rem;
     background-color: rgba(180, 180, 180, 0.8);
@@ -47,9 +47,14 @@
     transform: translate(-50%, -50%);
   }
 
-@media all and (max-width: 480px) {
+@media only all and (max-width: 480px) {
+  body { 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+  }
   .centerTimerHolder {
-    width:90%;
+    width: 90%;
     height: 20%;
     padding: 1rem;
   }
@@ -57,7 +62,6 @@
   .headline {
     font-size: 8vw;
   }
-
   .countdownTimer {
     font-size: 10vw;
   }
